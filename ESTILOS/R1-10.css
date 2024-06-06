@@ -1,0 +1,86 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(https://i.pinimg.com/736x/26/47/89/2647894b1997944d587c37f1b201484b.jpg) no-repeat center center fixed; /* Añadimos no-repeat y fixed para evitar repetición y mantener el fondo fijo */
+    background-size: cover; /* Asegura que el fondo cubra todo el cuerpo */
+}
+
+.recipe-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.75); /* Ajustamos la transparencia para un mejor contraste */
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    color: #320855;
+    font-size: 36px; /* Reducimos el tamaño para una mejor legibilidad */
+}
+
+img,.media-container {
+    margin: 20px auto;
+    display: block;
+    max-width: 100%; /* Asegura que las imágenes no sean más grandes que su contenedor */
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.section {
+    width: 48%;
+    text-align: left;
+}
+
+ul, ol {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 1200px) {
+   .recipe-container {
+         max-width: 90%; /* Ajustamos el ancho para pantallas medianas */
+    }
+}
+
+@media only screen and (max-width: 992px) {
+   .section {
+         width: 100%;
+         text-align: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+   .flex-container {
+         flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    h1 {
+         font-size: 28px; /* Ajustamos el tamaño para pantallas pequeñas */
+    }
+    
+    img,.media-container {
+         margin: 10px auto;
+    }
+    
+    ul, ol {
+         padding-left: 10px;
+    }
+    
+    li {
+         margin-bottom: 3px;
+    }
+}
